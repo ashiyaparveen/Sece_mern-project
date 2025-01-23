@@ -12,6 +12,9 @@ import UseEffect from './components/FunctionalComponents/Hooks/UseEffect';
 import UseEffectAPI from './components/FunctionalComponents/Hooks/UseEffectAPI';
 import UseEffectAPIimage from './components/FunctionalComponents/Hooks/UseEffectAPIimage';
 import UseReducer from './components/FunctionalComponents/Hooks/UseReducer';
+import UseRef from './components/FunctionalComponents/Hooks/UseRef.jsx';
+import UseMemo from './components/FunctionalComponents/Hooks/UseMemo.jsx'
+import UseCallback from './components/FunctionalComponents/Hooks/UseCallback.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -24,12 +27,19 @@ function App() {
       <Route path="/gallery"element={<Gallery page="Gallery" image="SECE Logo" />}></Route>
       <Route path="/contact"element={<Contact />}></Route>
       <Route path="/useApi"element={<UseEffectAPI />}></Route>
+      
+      <Route path="/usememo"element={<UseMemo/>}></Route>
       <Route path="/signup"element={<Signup />}></Route>
       <Route path="/login"element={<Login />}></Route>
       <Route path="/useState"element={<UseState />}></Route>
+     
       <Route path="/useEffect"element={<UseEffect />}></Route>
       <Route path="/useimage"element={<UseEffectAPIimage />}></Route>
+      <Route path="/use-ref"element={<UseRef />}></Route>
+      <Route path="/use-memo" element={<UseMemo />}></Route>
+      <Route path="/use-callback" element={<UseCallback />}></Route>
       <Route path="/usereducer"element={<UseReducer />}></Route>
+
       </Routes>
     </BrowserRouter>
   )

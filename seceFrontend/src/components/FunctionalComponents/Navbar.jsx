@@ -22,12 +22,17 @@ const Navbar=()=>{
                         <li><Link to='/useState' className='link'>useState</Link></li>
                         <li><Link to='/useEffect' className='link'>useEffect</Link></li>
                         <li><Link to='/useapi 'className="link">UseEffect API</Link></li>
+                        
                         <li><Link to='/usereducer 'className="link">UseReducer</Link></li>
                         <li><Link to='/useimage 'className="link">UseEffect API Image</Link></li>
+                        <li><Link to='/use-ref 'className="link">UseRef</Link></li>
+                        <li><Link to='/use-memo 'className="link">UseMemo</Link></li>
+                        <li><Link to='/use-callback 'className="link">UseCallback</Link></li>
                     </ul>)}
                 </div>
                 <li><Link to='/signup 'className="link">SignUp</Link></li>
                 <li><Link to='/login 'className="link">Login</Link></li>
+               
 
             </ol>
         </nav>
