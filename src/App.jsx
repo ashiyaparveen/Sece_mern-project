@@ -13,8 +13,11 @@ import UseEffectAPI from './components/FunctionalComponents/Hooks/UseEffectAPI';
 import UseEffectAPIimage from './components/FunctionalComponents/Hooks/UseEffectAPIimage';
 import UseReducer from './components/FunctionalComponents/Hooks/UseReducer';
 import UseRef from './components/FunctionalComponents/Hooks/UseRef.jsx';
-import UseMemo from './components/FunctionalComponents/Hooks/UseMemo.jsx'
+import UseMemo from './components/FunctionalComponents/Hooks/UseMemo.jsx';
 import UseCallback from './components/FunctionalComponents/Hooks/UseCallback.jsx';
+import ReactLifecycleMethods from './components/classComponents/ReactLifecycleMethods.jsx';
+import UseContext from './components/FunctionalComponents/Hooks/UseContext.jsx';
+import Memo from './components/FunctionalComponents/Memoization/Memo.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -28,18 +31,19 @@ function App() {
       <Route path="/contact"element={<Contact />}></Route>
       <Route path="/useApi"element={<UseEffectAPI />}></Route>
       
-      <Route path="/usememo"element={<UseMemo/>}></Route>
+      <Route path="/react-lifecycle-methods"element={<ReactLifecycleMethods />}></Route>
       <Route path="/signup"element={<Signup />}></Route>
       <Route path="/login"element={<Login />}></Route>
       <Route path="/useState"element={<UseState />}></Route>
-     
+      <Route path="/memo"element={<Memo/>}></Route>
       <Route path="/useEffect"element={<UseEffect />}></Route>
       <Route path="/useimage"element={<UseEffectAPIimage />}></Route>
       <Route path="/use-ref"element={<UseRef />}></Route>
-      <Route path="/use-memo" element={<UseMemo />}></Route>
-      <Route path="/use-callback" element={<UseCallback />}></Route>
+      <Route path="/usememo"element={<UseMemo />}></Route>
       <Route path="/usereducer"element={<UseReducer />}></Route>
-
+      <Route path="/usecall"element={<UseCallback />}></Route>
+      <Route path="/use-context"element={<UseContext />}></Route>
+     
       </Routes>
     </BrowserRouter>
   )
