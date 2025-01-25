@@ -1,21 +1,21 @@
-import { useState } from "react";
-import { useEffect } from "react";
-const ListItem=({func})=>{
-    var [number,setNumber]=useState([]);
-    useEffect(()=>{
-       
-        setNumber(func(4));
-    },[func])
-     return(
-        <div>
-            <h3>This number list has follows according to the number present in input box</h3>
-            <h4>
-                {number.map((number,index)=>{
-
-                  return <h5 key={index}>{number}</h5>
-                })}
-            </h4>
-        </div>
-     )
+import React from "react";
+class ReactLifecycleMethods extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            number:0
+        }
+    }
+    updateNum(){
+        
+    }
+render(){
+    return(<div>
+        <h1>this is React LifeCycle Methid</h1>
+        <h2> the state value is {this.state.number}</h2>
+        <button onClick={()=>this.setState({number:this.state.number+1})}>+</button>
+    </div>)
 }
-export default ListItem;
+
+}
+export default ReactLifecycleMethods;
