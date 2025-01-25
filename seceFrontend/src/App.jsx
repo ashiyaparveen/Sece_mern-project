@@ -18,12 +18,11 @@ import UseCallback from './components/FunctionalComponents/Hooks/UseCallback';
 import ReactLifecycleMethods from './components/classComponents/ReactLifecycleMethods';
 import UseContext from './components/FunctionalComponents/Hooks/UseContext';
 import Memo from './components/FunctionalComponents/Memoization/Memo';
-import LazyLoadingWithSuspense from './components/FunctionalComponents/Memoization/LazyLoadingWithSuspense';
+import LazyLoadingWithSuspense from './components/FunctionalComponents/Memoization/LazyLoadingWithSuSpense';
 import UseLocalStorage from "./components/FunctionalComponents/Hooks/UseLocalStorage";
 import HoC from "./components/FunctionalComponents/HoC/HoC";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const handleLogin = (email, password) => {
     if (email && password) {
