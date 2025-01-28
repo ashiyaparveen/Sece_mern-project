@@ -1,0 +1,27 @@
+{
+  "name": "secebackend",
+  "version": "1.0.0",
+  "description": "This is a Backend for seceFrontend",
+  "homepage": "https://github.com/ashiyaparveen/Sece_mern-project#readme",
+  "bugs": {
+    "url": "https://github.com/ashiyaparveen/Sece_mern-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashiyaparveen/Sece_mern-project.git"
+  },
+  "license": "ISC",
+  "author": "Ashiya Parveen R",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "nodemon": "^3.1.9"
+  }
+}
